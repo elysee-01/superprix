@@ -7,32 +7,55 @@ class Migration(migrations.Migration):
 
     initial = True
 
-    dependencies = [
-    ]
+    dependencies = []
 
     operations = [
         migrations.CreateModel(
-            name='Produit',
+            name="Produit",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('produit', models.CharField(help_text='Nom du produit', max_length=255)),
-                ('prix', models.IntegerField(default=0)),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                (
+                    "produit",
+                    models.CharField(help_text="Nom du produit", max_length=255),
+                ),
+                ("prix", models.IntegerField(default=0)),
             ],
             options={
-                'verbose_name': 'Produit',
-                'verbose_name_plural': 'Produits',
+                "verbose_name": "Produit",
+                "verbose_name_plural": "Produits",
             },
         ),
         migrations.CreateModel(
-            name='Client',
+            name="Client",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('client', models.CharField(max_length=255)),
-                ('achats', models.ManyToManyField(related_name='client_products', to='mainapp.Produit')),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("client", models.CharField(max_length=255)),
+                (
+                    "achats",
+                    models.ManyToManyField(
+                        related_name="client_products", to="mainapp.Produit"
+                    ),
+                ),
             ],
             options={
-                'verbose_name': 'Client',
-                'verbose_name_plural': 'Clients',
+                "verbose_name": "Client",
+                "verbose_name_plural": "Clients",
             },
         ),
     ]
