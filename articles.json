@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "client": "James AKRAN",
+    "achats": [
+      {
+        "produit": "Détergent OMO 1L",
+        "prix": 1200
+      },
+      {
+        "produit": "Huile Végétale AYA 90cl",
+        "prix": 850
+      },
+      {
+        "produit": "Liqueur St-James 400ml",
+        "prix": 3100
+      },
+      {
+        "produit": "Sac de riz Oncle Sam 50Kg",
+        "prix": 18000
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "client": "Fabienne KOFFI",
+    "achats": [
+      {
+        "produit": "Baguettes de pain",
+        "prix": 300
+      },
+      {
+        "produit": "Sucre 1Kg",
+        "prix": 900
+      },
+      {
+        "produit": "Gel Douche Olive",
+        "prix": 2350
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "client": "Jean TOURE",
+    "achats": [
+      {
+        "produit": "Razoir Gilette",
+        "prix": 500
+      },
+      {
+        "produit": "Rhum Mangoustan 400ml",
+        "prix": 3000
+      },
+      {
+        "produit": "Pintade Congélé 1.3 Kg",
+        "prix": 6000
+      },
+      {
+        "produit": "Pizza Italienne Moyen",
+        "prix": 4250
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "client": "Lucien KASSI",
+    "achats": [
+      {
+        "produit": "Vin Bordeaux",
+        "prix": 13000
+      },
+      {
+        "produit": "Pack Cache-nez 50",
+        "prix": 5000
+      },
+      {
+        "produit": "Raizins 1,6 Kg",
+        "prix": 2175
+      }
+    ]
+  }
+]
